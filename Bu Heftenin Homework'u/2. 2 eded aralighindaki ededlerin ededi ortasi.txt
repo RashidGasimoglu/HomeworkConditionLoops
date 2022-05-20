@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Xahish olunur Bashlanghic ededi daxil edesiniz: ");
+            int StartPoint = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Xahish olunur Bitish ededi daxil edesiniz: ");
+            int EndPoint = int.Parse(Console.ReadLine());
+
+            float Sum = 0;
+            float Count = 0;
+            for (float i = StartPoint; i <= EndPoint; i++)
+            {
+                Sum = Sum + i;
+                Count++;
+            }
+            Console.WriteLine($"Iki eded aralighindaki ededlerin Ededi Ortasi {Sum / Count}");
+        }
+    }
+}
+
+

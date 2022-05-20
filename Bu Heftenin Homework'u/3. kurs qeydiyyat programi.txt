@@ -1,0 +1,47 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool isContinue = true;
+            do
+            {
+                Console.WriteLine("Kursda qeydiyyatdan kechmek uchun xahish olunur Yashinizi qeyd edin: ");
+                int Age = int.Parse(Console.ReadLine());
+                if (Age >= 18)
+                {
+                    Console.WriteLine("Kursda qeydiyyatdan kechmek uchun Ingilis dilinden yighdighiniz Balinizi da hemchinin qeyd edin: ");
+                    int Point = int.Parse(Console.ReadLine());
+                    if (Point > 50)
+                    {
+                        Console.WriteLine("Tebrikler ! Kursda qeydiyyatdan kechmek uchun lazim olan Yash'a ve Bal'a sahibsiniz  !");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Kursda qeydiyyatdan kechmek uchun Baliniz chatmir !");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Kursda qeydiyyatdan kechmek uchun Yashiniz chatmir !");
+                }
+                
+                Console.WriteLine("Qeydiyyatdan kechmek isteyen bashqa bir telebe varmi ?");
+                Console.WriteLine("Varsa (He) yazin :");
+                string heyox = Console.ReadLine().ToLower();
+                if (heyox == "he")
+                {
+                    isContinue = true;
+                }
+                else
+                {
+                    isContinue = false;
+                }
+            } while (isContinue);
+        }
+    }
+}
+

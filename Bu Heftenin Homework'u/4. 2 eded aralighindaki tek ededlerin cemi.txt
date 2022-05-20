@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Xahish olunur Bashlanghic ededi daxil edesiniz: ");
+            int StartPoint = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Xahish olunur Bitish ededi daxil edesiniz: ");
+            int EndPoint = int.Parse(Console.ReadLine());
+
+            int Sum = 0;
+            for (int i = StartPoint; i <= EndPoint; i++)
+            {
+                if (i%2!=0)
+                {
+                  Sum = Sum + i;
+                }
+            }
+            Console.WriteLine($"Iki eded aralighindaki tek ededlerin Cemi: {Sum}");
+        }
+    }
+}
+
+
